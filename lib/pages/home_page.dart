@@ -5,6 +5,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    brigvagitable(rupees: 50);
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -16,5 +17,9 @@ class HomePage extends StatelessWidget {
       ),
       drawer: Drawer(),
     );
+  }
+
+  brigvagitable({int rupees = 100}) {
+    print(rupees);
   }
 }
