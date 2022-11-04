@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/home_page.dart';
 
-void main()
-{
-  runApp(const MyApp());
+void main() {
+  runApp(secondapp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,13 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      
     );
+  }
+}
+
+class secondapp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: HomePage());
   }
 }
