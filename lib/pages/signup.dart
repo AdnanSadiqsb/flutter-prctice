@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class Signup extends StatelessWidget {
+  const Signup({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -17,7 +19,7 @@ class LoginPage extends StatelessWidget {
           ),
           // ignore: prefer_const_constructors
           Text(
-            "welcome to login",
+            "welcome to Sign up",
             style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -46,8 +48,53 @@ class LoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.email,
+                      color: Color.fromARGB(255, 50, 6, 196),
+                    ),
+                  ),
+                  style: const TextStyle(fontSize: 20, letterSpacing: 2),
+                ),
+                const SizedBox(height: 10),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: "phone",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.phone,
+                      color: Color.fromARGB(255, 50, 6, 196),
+                    ),
+                  ),
+                  style: const TextStyle(fontSize: 20, letterSpacing: 2),
+                ),
+                const SizedBox(height: 10),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: "address",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.location_city,
+                      color: Color.fromARGB(255, 50, 6, 196),
+                    ),
+                  ),
+                  style: const TextStyle(fontSize: 20, letterSpacing: 2),
+                ),
+                const SizedBox(height: 10),
+                TextField(
                   obscureText: true,
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                     labelText: "password",
                     hintStyle: const TextStyle(
@@ -71,7 +118,7 @@ class LoginPage extends StatelessWidget {
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                       child: Text(
-                        "Login",
+                        "Sign up",
                         style: TextStyle(fontSize: 20, letterSpacing: 2),
                       ),
                     )),
